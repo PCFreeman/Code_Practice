@@ -1,0 +1,5 @@
+﻿  AppWindow.cpp
+  main.cpp
+  Generating Code...
+Debug\Window.obj : warning LNK4042: object specified more than once; extras ignored
+  DirecxX9.vcxproj -> C:\Users\freem\Desktop\Project1\Debug\DirecxX9.exe
