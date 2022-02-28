@@ -116,10 +116,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\freem\Desktop\GitProject\Code_Practice\DirecxX9\GameEngine\WindowingSystem;C:\Users\freem\Desktop\GitProject\Code_Practice\DirecxX9\GameEngine\GraphicsEngine;C:\Users\freem\Desktop\GitProject\Code_Practice\DirecxX9\GameEngine\GraphicsEngine\SwapChain;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,11 +143,15 @@
   <ItemGroup>
     <ClCompile Include="App\AppWindow.cpp" />
     <ClCompile Include="App\main.cpp" />
-    <ClCompile Include="GameEngine\Window.cpp" />
-    <ClCompile Include="GameEngine\Window.h" />
+    <ClCompile Include="GameEngine\WindowingSystem\Window.cpp" />
+    <ClCompile Include="GameEngine\WindowingSystem\Window.h" />
+    <ClCompile Include="GameEngine\GraphicsEngine\GraphicsEngine.cpp" />
+    <ClCompile Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App\AppWindow.h" />
+    <ClInclude Include="GameEngine\GraphicsEngine\GraphicsEngine.h" />
+    <ClInclude Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,10 +10,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameEngine\Window.h">
+    <ClCompile Include="GameEngine\WindowingSystem\Window.h">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="GameEngine\Window.cpp">
+    <ClCompile Include="GameEngine\WindowingSystem\Window.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="App\AppWindow.cpp">
@@ -22,10 +22,18 @@
     <ClCompile Include="App\main.cpp">
       <Filter>APP</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngine\GraphicsEngine\GraphicsEngine.cpp" />
+    <ClCompile Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App\AppWindow.h">
       <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GraphicsEngine\GraphicsEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.h">
+      <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
