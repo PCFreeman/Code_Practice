@@ -24,6 +24,8 @@
     </ClCompile>
     <ClCompile Include="GameEngine\GraphicsEngine\GraphicsEngine.cpp" />
     <ClCompile Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.cpp" />
+    <ClCompile Include="GameEngine\GraphicsEngine\DeviceContext\DeviceContext.cpp" />
+    <ClCompile Include="GameEngine\GraphicsEngine\VertexBuffer\VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App\AppWindow.h">
@@ -33,6 +35,12 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="GameEngine\GraphicsEngine\SwapChain\SwapChain.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GraphicsEngine\DeviceContext\DeviceContext.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GraphicsEngine\VertexBuffer\VertexBuffer.h">
       <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>

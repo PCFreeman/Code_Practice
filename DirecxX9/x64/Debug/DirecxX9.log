@@ -1,9 +1,2 @@
 ﻿  AppWindow.cpp
-  main.cpp
-  Window.cpp
-  Window.h
-  GraphicsEngine.cpp
-  SwapChain.cpp
-  Generating Code...
-x64\Debug\Window.obj : warning LNK4042: object specified more than once; extras ignored
   DirecxX9.vcxproj -> C:\Users\freem\Desktop\GitProject\Code_Practice\x64\Debug\DirecxX9.exe

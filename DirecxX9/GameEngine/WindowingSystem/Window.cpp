@@ -69,7 +69,8 @@ bool Window::init()
 		window = this;*/
 
 		//Creation of the window
-	m_hwnd = ::CreateWindowEx(WS_EX_OVERLAPPEDWINDOW, L"MyWindowClass", L"DirectX Application", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1024, 768,
+	m_hwnd = ::CreateWindowEx(WS_EX_OVERLAPPEDWINDOW, L"MyWindowClass", L"DirectX Application",
+		WS_CAPTION | WS_SYSMENU, CW_USEDEFAULT, CW_USEDEFAULT, 1024, 768,
 		NULL, NULL, NULL, this);
 
 	//if the creation fail return false
@@ -95,14 +96,13 @@ bool Window::broadcast()
 {
 	MSG msg;
 
+	this->onUpdate();
 
 	while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE) > 0)
 	{
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}
-
-	this->onUpdate();
 
 	Sleep(1);
 
@@ -127,7 +127,7 @@ bool Window::isRun()
 RECT Window::getClientWindowRect()
 {
 	RECT rc;
-	GetClientRect(this->m_hwnd, &rc);
+	::GetClientRect(this->m_hwnd, &rc);
 	return rc;
 }
 

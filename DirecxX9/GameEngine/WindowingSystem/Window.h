@@ -1,6 +1,8 @@
 #pragma once
 #include <Windows.h>
 
+
+
 class Window
 {
 public:
@@ -14,6 +16,8 @@ public:
 
 	RECT getClientWindowRect();
 	void setHWND(HWND hwnd);
+
+
 	//EVENTS
 	virtual void onCreate();
 	virtual void onUpdate();
